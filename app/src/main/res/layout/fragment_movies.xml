@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentetion.movies.MoviesFragment">
+
+    <ViewFlipper
+        android:id="@+id/fliper_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <include
+            android:id="@+id/include_view_movies_loadind_state"
+            layout="@layout/include_view_movie_loading"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_movies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/item_movie"/>
+
+        <include android:id="@+id/include_view_movies_error_state"
+            layout="@layout/include_view_movie_error_state" />
+
+    </ViewFlipper>
+
+</layout>

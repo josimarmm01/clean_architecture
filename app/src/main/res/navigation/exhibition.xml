@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exhibition"
+    app:startDestination="@id/exhibitionFragment">
+
+    <fragment
+        android:id="@+id/exhibitionFragment"
+        android:name="com.example.josimar.presentetion.exhibition.ExhibitionFragment"
+        android:label="fragment_exhibition"
+        tools:layout="@layout/fragment_exhibition" />
+</navigation>

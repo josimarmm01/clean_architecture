@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">testEgsys</string>
+    <string name="error_loading_movies">Error ao obeter os filmes</string>
+</resources>
